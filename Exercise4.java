@@ -61,7 +61,8 @@ public class Exercise4 {
     public int getPopularity(Record item) {
       //Hämta en collection med edges från noden med hjälv av getEdgesFrom
       //Returnera antalet
-       return -1;
+	
+       return graph.getEdgesFrom(item).size();
     }
 
     public SortedMap<Integer, Set<Record>> getTop5() {
